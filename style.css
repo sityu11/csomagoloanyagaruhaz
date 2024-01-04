@@ -1,77 +1,88 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	/* border: 0; visszatenni ha kesz!*/ 
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* -------------------------------------*/
 
 * {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+    font-weight: 600;
     box-sizing: border-box;
     border: 1px solid black;
+    color: rgba(49, 49, 49, 0.8);
+}
+
+p {
+    font-size: 18px;
+}
+
+header p {
+    font-size: 11px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    width: 45%;
+    height: 380px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    border: 5px solid #326ff3b3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+    display: inline-block;
+    overflow: auto;
+}
+
+@media (min-width: 830px) {
+    li {
+        height: 365px;
+    }
+    header p {
+        font-size: 15px;
+    }
+    header-nformations {
+        line-height: 1.5rem;
+    }
 }
 
 body {
     background: url('https://i.imgur.com/HXmyoIX.png') repeat center center fixed;
-    font-family: 'Libre baskerville', serif;
-    color: rgba(49, 49, 49, 0.8);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    
+    font-family: verdana, sans-serif, serif;
+    padding: 1rem;
 }
 
-.wrapper {
-    width: 600px;
-    max-width: calc(100vw - 10px);
-    max-height: 500px;
+h1 {
+    font-size: 2rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+.container {
+    width: 100%;
     margin: 1rem auto;
     padding: 0.5rem;
     text-align: center;
     overflow: auto;
+}
+
+.logo {
+    margin: 5px auto;
+    padding: 5px;
 
 }
 
+.products {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.products-image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #949597fb;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+    border-radius: 3px;
+}
