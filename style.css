@@ -9,6 +9,14 @@
     color: rgba(65, 64, 64, 0.8);
 }
 
+body {
+    max-width: calc(100vw - 20px);
+    background: url('https://i.imgur.com/HXmyoIX.png') repeat center center fixed;
+    font-family: verdana, sans-serif, serif;
+    padding: 1rem;
+    font-size: 18px;
+}
+
 .name-text {
     width: 100%;
     margin: 10px auto;
@@ -17,10 +25,6 @@
 
 .info-text {
     padding: 5px;
-}
-
-.info-text p {
-    font-size: 16px;
 }
 
 ul {
@@ -48,13 +52,9 @@ li {
     .info-text p {
         font-size: 16px;
     }
-}
-
-body {
-    width: calc(100vw - 20px);
-    background: url('https://i.imgur.com/HXmyoIX.png') repeat center center fixed;
-    font-family: verdana, sans-serif, serif;
-    padding: 1rem;
+    .products p {
+        font-size: 16px;
+    }
 }
 
 h1 {
