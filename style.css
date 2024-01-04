@@ -2,19 +2,25 @@
 * {
     margin: 0;
     padding: 0;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
     font-weight: 600;
     box-sizing: border-box;
     /*border: 1px solid black; */
-    color: rgba(49, 49, 49, 0.8);
+    color: rgba(65, 64, 64, 0.8);
 }
 
-p {
-    font-size: 18px;
+.name-text {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
 }
 
-header p {
-    font-size: 11px;
+.info-text {
+    padding: 5px;
+}
+
+.info-text p {
+    font-size: 16px;
 }
 
 ul {
@@ -23,9 +29,10 @@ ul {
 
 li {
     width: 45%;
-    height: 380px;
+    height: 440px;
     margin: 5px 5px;
     padding: 5px 5px;
+    background-color: rgba(156, 197, 236, 0.3);
     border: 5px solid #326ff3b3;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
@@ -36,16 +43,15 @@ li {
 @media (min-width: 830px) {
     li {
         height: 365px;
+        width: 30%;
     }
-    header p {
-        font-size: 15px;
-    }
-    header-nformations {
-        line-height: 1.5rem;
+    .info-text p {
+        font-size: 16px;
     }
 }
 
 body {
+    width: calc(100vw - 20px);
     background: url('https://i.imgur.com/HXmyoIX.png') repeat center center fixed;
     font-family: verdana, sans-serif, serif;
     padding: 1rem;
@@ -56,8 +62,6 @@ h1 {
     margin: 5px;
     padding: 5px;
 }
-
-
 
 .container {
     width: 100%;
@@ -71,6 +75,10 @@ h1 {
     margin: 5px auto;
     padding: 5px;
 
+}
+
+.logo img {
+    max-width: 370px;
 }
 
 .products {
