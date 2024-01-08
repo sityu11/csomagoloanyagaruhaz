@@ -2,55 +2,38 @@
 <html lang="hu">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Csomagolástechnikai weboldal">
-        <meta name="keywords" content="csomagoloanyag, csomagolastechnika, doboz, ragasztoszalag, munkavedelem, szerszam">
-        <meta name="author" content="Istvan Sera">
-        <link rel="viewport" content="width=device-width initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raktárkészlet</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <title>Csomagolóanyagáruház</title>
     </head>
     <body>
-        <header class="container">
-            <figure class="logo">
-                <img src="https://i.imgur.com/WZ51OUp.png" alt="logo" title="csomagoloanyagaruhaz">
-            </figure>
-            <div class="informations-wrapper">
-                <div class="name-text">
+        <div class="container">
+            <header>
+                <div class="heading-wrapper">
+                    <img src="image/logo.png" alt="Cég Logo" width="500" height="200">
                     <h1>Csomagoloanyagaruhaz.hu</h1>
                 </div>
-                <div class="info-text">
+                <div class="information">
                     <p>Tájékoztatjuk tisztelt vásárlóinkat, hogy webáruházunk megszűnt és a megmaradt árukészletünket kiárusítjuk.</p>
                     <p>Az alábbi listában találják a még raktáron lévő termékeket.</p>
                     <p>Amennyiben valamelyik felkelti érdeklődésüket, kérjük a következő elérhetőségeken jelezzék vételi szándékukat.</p>
                 </div>
-            </div>
-        </header>
-        <section class="products">
-            <ul>
-                <li>
-                    <img src="https://i.imgur.com/AwBFd3n.jpg" alt="bakancs" title="Bakancs" class="products-image">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam voluptatem quod deserunt iste est exercitationem!
-                        Necessitatibus, illo a, optio, sapiente quasi deserunt vel beatae at animi non quia odio.</p>
-                </li>
-                <li>
-                    <img src="https://i.imgur.com/uc4JmyN.jpg" alt="bálakötöző" title="Bálakötöző" class="products-image">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aspernatur laboriosam nihil, iste nesciunt eaque ab iure adipisci fugit inventore.
-                        Reprehenderit aperiam a id? Aperiam, quas delectus. Enim, eius dolor.</p>
-                </li>
-                <li>
-                    <img src="https://i.imgur.com/AwBFd3n.jpg" alt="bakancs" title="Bakancs" class="products-image">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam voluptatem quod deserunt iste est exercitationem!
-                        Necessitatibus, illo a, optio, sapiente quasi deserunt vel beatae at animi non quia odio.</p>
-                </li>
-                <li>
-                    <img src="https://i.imgur.com/AwBFd3n.jpg" alt="bakancs" title="Bakancs" class="products-image">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam voluptatem quod deserunt iste est exercitationem!
-                        Necessitatibus, illo a, optio, sapiente quasi deserunt vel beatae at animi non quia odio.</p>
-                </li>
-            </ul>
-        </section>
+            </header>
+
+            <main>
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Keresés...">
+                    <button onclick="searchProduct()">Keresés</button>
+                </div>
+
+                <div class="product-grid">
+                   <!-- Termék kártyák jönnek ide -->
+                </div>
+                <p id="noProductFound" style="display: none;">Nincs ilyen termék</p>
+            </main>
+
+            <script src="script.js"></script>
+    
+        </div>
     </body>
 </html>
