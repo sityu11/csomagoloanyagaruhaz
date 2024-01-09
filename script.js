@@ -1,8 +1,9 @@
 const products = [
-    { name: "Rock munkavédelmi bakancs", price: 1000, quantity: "10 db", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO200345:2011, S1P SRC", image: "image/rock.bakancs.jpg" },
+    
     { name: "Kartondoboz E0 (78x78x82)", price: 45, quantity: "150 db", description: "Kartondoboz E0 Mérete: 78x82x82 mm", image: "image/kartondoboz-e0.jpg" },
     { name: "Kartondoboz F0 (140x190x45)", price: 100, quantity: "120 db", description: "Kartondoboz F0 Mérete: 140x190x45 mm", image: "image/kartondoboz-f0.jpg" },
-    { name: "Kartondoboz F1 (140x190x60)", price: 120, quantity: "50 db", description: "Kartondoboy F1 Mérete: 140x190x60 mm", image: "image/kartondoboz-f0.jpg" },
+    { name: "Kartondoboz F1 (140x190x60)", price: 120, quantity: "50 db", description: "Kartondoboz F1 Mérete: 140x190x60 mm", image: "image/kartondoboz-f0.jpg" },
+    { name: "Rock munkavédelmi bakancs több méretben", price: 7000, quantity: "7 db", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO200345:2011, S1P SRC", image: "image/rock.bakancs.jpg" },
   ];
   
   function displayProducts(productsToShow) {
@@ -17,7 +18,8 @@ const products = [
       productImg.src = product.image;
       productImg.alt = product.name;
   
-      const productName = document.createElement('h2');
+      const productName = document.createElement('div');
+      productName.classList.add('product-name');
       productName.textContent = product.name;
   
       const productPrice = document.createElement('h3');

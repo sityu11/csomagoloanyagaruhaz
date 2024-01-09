@@ -3,27 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Raktárkészlet</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@500&family=Nunito&family=Raleway&family=Roboto&family=Rubik&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f37e821391.js" crossorigin="anonymous"></script>
+        <title>Raktárkészlet</title>
     </head>
+    
     <body>
+        
         <div class="container">
+            
             <header>
                 <div class="heading-wrapper">
                     <img src="image/logo.png" alt="Cég Logo" width="500" height="200">
-                    <h1>Csomagoloanyagaruhaz.hu</h1>
+                    <h1>CSOMAGOLOANYAGARUHAZ.HU</h1>
                 </div>
                 <div class="information">
-                    <p>Tájékoztatjuk tisztelt vásárlóinkat, hogy webáruházunk megszűnt és a megmaradt árukészletünket kiárusítjuk.</p>
-                    <p>Az alábbi listában találják a még raktáron lévő termékeket.</p>
-                    <p>Amennyiben valamelyik felkelti érdeklődésüket, kérjük a következő elérhetőségeken jelezzék vételi szándékukat.</p>
+                    <div class="information-text">
+                        <p>Tájékoztatjuk tisztelt vásárlóinkat, hogy webáruházunk megszűnt és a megmaradt árukészletünket kiárusítjuk.</p>
+                        <p>Az alábbi listában találják a még raktáron lévő termékeket.</p>
+                        <p>Amennyiben valamelyik felkelti érdeklődésüket, kérjük a következő elérhetőségeken jelezzék vételi szándékukat.</p>
+                    </div>
+                    <div class="information-contacts">
+                        <ul>
+                            <li>
+                                <p><i class="fa-solid fa-user"></i> Séra István </p>
+                            </li>
+                            <li>
+                                <p><i class="fa-solid fa-phone"></i> +3670/511-6473 </p>
+                            </li>
+                            <li>
+                                <p><i class="fa-solid fa-envelope-open-text"></i> csomagoloanyagaruhaz@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </header>
 
             <main>
                 <div class="search">
                     <input type="text" id="searchInput" placeholder="Keresés...">
-                    <button onclick="searchProduct()">Keresés</button>
+                    <button onclick="searchProduct()"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
                 </div>
 
                 <div class="product-grid">
