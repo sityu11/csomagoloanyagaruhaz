@@ -1,10 +1,8 @@
 const products = [
-    
     { name: "Kartondoboz E0 (78x78x82)", price: 45, quantity: "150 db", description: "Kartondoboz E0 Mérete: 78x82x82 mm", image: "image/kartondoboz-e0.jpg" },
     { name: "Kartondoboz F0 (140x190x45)", price: 100, quantity: "120 db", description: "Kartondoboz F0 Mérete: 140x190x45 mm", image: "image/kartondoboz-f0.jpg" },
     { name: "Kartondoboz F1 (140x190x60)", price: 120, quantity: "50 db", description: "Kartondoboz F1 Mérete: 140x190x60 mm", image: "image/kartondoboz-f0.jpg" },
     { name: "Kartondoboz G9 (260x400x400)", price: 300, quantity: "150 db", description: "Kartondoboz G9 260x400x400 mm", image: "image/doboz.jpg" },
-    
     { name: "Futártasak FB02 (225x325x50)", price: 25, quantity: "440 db", description: "Futártasak FB02 Mérete: 225x325x50 mm", image: "image/futartasak.jpg" },
     { name: "Futártasak FB03 (240x350x50)", price: 26, quantity: "110 db", description: "Futártasak FB03 Mérete: 240x350x50 mm", image: "image/futartasak.jpg" },
     { name: "Futártasak FB04 (325x425x50)", price: 40, quantity: "30 db", description: "Futártasak FB04 Mérete: 325x425x50 mm", image: "image/futartasak.jpg" },
@@ -27,10 +25,35 @@ const products = [
     { name: "Légpárnás boríték H/18 Barna", price: 90, quantity: "90 db", description: "Barna színű légpárnás boríték Külső méret: 290x370 mm Belső méret: 270x360 mm", image: "image/legparnas-boritek.jpg" },
     { name: "Légpárnás boríték H/18 Fehér", price: 90, quantity: "100 db", description: "Fehér színű légpárnás boríték Külső méret: 290x370 mm Belső méret: 270x360 mm", image: "image/legparnas-boritek-feher.jpg" },
     { name: "Tapadószalag felhordó 75 mm széles", price: 5000, quantity: "1 db", description: "Kézi dobozzáró készülék max. 75 mm széles ragasztószalaghoz", image: "image/tapadoszalag-felhordo-75mm.jpg" },
+    { name: "Asztali ragasztószalag adagoló", price: 2500, quantity: "1 db", description: "Irodai vagy otthoni használatra is kiváló. Súlyozott (kb. 1 kg)", image: "image/asztali-adagolo.jpg" },
+    { name: "Jelölő szalag piros-fehér 48mm/20m", price: 1000, quantity: "18 db", description: "Munkaterületek vagy veszélyes részek megjelölésére használható piros-fehér ragasztószalag", image: "image/jeloloszalag-kicsi.jpg" },
+    { name: "Jelölő szalag sárga-fekete 48mm/20m", price: 1000, quantity: "18 db", description: "Munkaterületek vagy veszélyes részek megjelölésére használható sárga-fekete ragasztószalag", image: "image/jeloloszalag-kicsi.jpg" },
+    { name: "Simítózáras tasak 120x180/50my", price: 10, quantity: "280 db", description: "Víztiszta önzáró tasak Mérete: 120x180 mm Anyagvastagság: 50my", image: "image/simitozaras-tasak.jpg" },
+    { name: "Simítózáras tasak 180x250/50my", price: 15, quantity: "150 db", description: "Víztiszta önzáró tasak Mérete: 180x250 mm Anyagvastagság: 50my", image: "image/simitozaras-tasak.jpg" },
+    { name: "Simítózáras tasak 60x80/50my", price: 5, quantity: "100 db", description: "Víztiszta önzáró tasak Mérete: 60x80 mm Anyagvastagság: 50my", image: "image/simitozaras-tasak.jpg" },
 
     // { name: "", price: , quantity: "db", description: "", image: "image" },
 
-    { name: "Rock munkavédelmi bakancs több méretben", price: 7000, quantity: "7 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO200345:2011, S1P SRC", image: "image/rock.bakancs.jpg" },
+    { name: "Rock Walker AB munkavédelmi bakancs Méret: 38", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 38", image: "image/rock.bakancs.jpg" },
+    { name: "Rock Walker AB munkavédelmi bakancs Méret: 39", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 39", image: "image/rock.bakancs.jpg" },
+    { name: "Rock Walker AB munkavédelmi bakancs Méret: 40", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 40", image: "image/rock.bakancs.jpg" },
+    { name: "Rock Walker AB munkavédelmi bakancs Méret: 41", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 41", image: "image/rock.bakancs.jpg" },
+    { name: "Rock Walker AB munkavédelmi bakancs Méret: 42", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 42", image: "image/rock.bakancs.jpg" },
+    { name: "Rock Walker AB munkavédelmi bakancs Méret: 45", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 45", image: "image/rock.bakancs.jpg" },
+    { name: "Rock Walker AB munkavédelmi bakancs Méret: 46", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 46", image: "image/rock.bakancs.jpg" },
+    { name: "Rock Jazz AB munkavédelmi bakancs Méret: 41", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 41", image: "image/jazz-bakancs.jpg" },
+    { name: "Rock Jazz AB munkavédelmi bakancs Méret: 42", price: 6000, quantity: "2 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 42", image: "image/jazz-bakancs.jpg" },
+    { name: "Rock Jazz AB munkavédelmi bakancs Méret: 43", price: 6000, quantity: "2 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 43", image: "image/jazz-bakancs.jpg" },
+    { name: "Rock Jazz AB munkavédelmi bakancs Méret: 44", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 44", image: "image/jazz-bakancs.jpg" },
+    { name: "Rock Walker SA munkavédelmi szandál Méret: 41", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi szandál, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 41", image: "image/munkavedelmi-szandal.jpg" },
+    { name: "Rock Walker SA munkavédelmi szandál Méret: 42", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi szandál, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 42", image: "image/munkavedelmi-szandal.jpg" },
+    { name: "Rock Walker SA munkavédelmi szandál Méret: 43", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi szandál, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 43", image: "image/munkavedelmi-szandal.jpg" },
+    { name: "Rock Walker SA munkavédelmi szandál Méret: 44", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi szandál, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 44", image: "image/munkavedelmi-szandal.jpg" },
+    { name: "PVC csizma Szín: Terepmintás Méret: 41", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 41", image: "image/gumicsizma.jpg" },
+    { name: "PVC csizma Szín: Terepmintás Méret: 42", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 42", image: "image/gumicsizma.jpg" },
+    { name: "PVC csizma Szín: Terepmintás Méret: 43", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 43", image: "image/gumicsizma.jpg" },
+    { name: "PVC csizma Szín: Terepmintás Méret: 45", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 45", image: "image/gumicsizma.jpg" },
+
   ];
   
   function displayProducts(productsToShow) {
