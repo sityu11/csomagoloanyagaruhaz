@@ -53,6 +53,7 @@ const products = [
     { name: "PVC csizma Szín: Terepmintás Méret: 42", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 42", image: "image/gumicsizma.jpg" },
     { name: "PVC csizma Szín: Terepmintás Méret: 43", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 43", image: "image/gumicsizma.jpg" },
     { name: "PVC csizma Szín: Terepmintás Méret: 45", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 45", image: "image/gumicsizma.jpg" },
+    { name: "Érintésmentes infravörös lázmérő Berrcom JXB-178", price: 13000, quantity: "2 db", description: "Érintésmentes, infravörös lázmérő 3 különböző üzemmóddal", image: "image/lazmero.jpg" },
 
   ];
   
