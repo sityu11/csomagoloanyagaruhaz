@@ -104,8 +104,10 @@ h1 {
 }
 
 .information {
+    display: flex;
+    flex-direction: column;
     max-width: 85%;
-    margin: 5px auto;
+    margin: 10px auto 20px auto;
     padding: 5px;
     padding-bottom: 0px;
     line-height: 25px;
@@ -113,10 +115,14 @@ h1 {
     font-weight: 600;
     color: rgba(64, 64, 64, 0.8);
 }
+
+.information-contacts {
+    margin: 0 auto;
+}
   
 .search {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 input {
@@ -154,7 +160,6 @@ button:active {
   
 .product-card {
     background-color: rgba(156, 197, 236, 0.3);
-    border: 5px solid #326ff3b3;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
     text-align: center;
@@ -204,7 +209,7 @@ button:active {
 .product-desc {
     margin-bottom: 5px;
     padding: 4px;
-    height: 85px;
+    height: 80px;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -216,13 +221,20 @@ button:active {
 }
 
 ul {
+    max-width: 700px;
+    margin: 8px auto 3px auto;
     padding: 5px;
+    border: 2px solid rgba(230, 228, 228, 0.5);
+    box-shadow: 3px 3px 5px rgba(196, 195, 195, 0.5);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 li {
     display: inline-block;
-    padding: 3px 8px 3px 8px;
+    padding: 5px 8px 3px 8px;
     font-size: 16px;
+    color: rgba(58, 58, 59, 0.8);
     transition: all 0.5s ease-in-out;
 }
 

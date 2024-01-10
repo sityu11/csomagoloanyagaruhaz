@@ -17,7 +17,16 @@ const products = [
     { name: "Légpárnás boríték C/13 Barna", price: 40, quantity: "200 db", description: "Barna színű légpárnás boríték Külső méret: 170x225 mm Belső méret: 150x215 mm", image: "image/legparnas-boritek.jpg" },
     { name: "Légpárnás boríték C/13 Fehér", price: 40, quantity: "30 db", description: "Fehér színű légpárnás boríték Külső méret: 170x225 mm Belső méret: 150x215 mm", image: "image/legparnas-boritek-feher.jpg" },
     { name: "Légpárnás boríték D/14 Barna", price: 45, quantity: "100 db", description: "Barna színű légpárnás boríték Külső méret: 200x275 mm Belső méret: 180x265 mm", image: "image/legparnas-boritek.jpg" },
-    { name: "Légpárnás boríték D/14 Fehér", price: 45, quantity: "130 db", description: "Fehér színű légpárnás boríték Külső méret: 170x225 mm Belső méret: 150x215 mm", image: "image/legparnas-boritek-feher.jpg" },
+    { name: "Légpárnás boríték D/14 Fehér", price: 45, quantity: "130 db", description: "Fehér színű légpárnás boríték Külső méret: 170x225 mm Belső méret: 180x265 mm", image: "image/legparnas-boritek-feher.jpg" },
+    { name: "Légpárnás boríték E/15 Barna", price: 50, quantity: "150 db", description: "Barna színű légpárnás boríték Külső méret: 240x275 mm Belső méret: 220x265 mm", image: "image/legparnas-boritek.jpg" },
+    { name: "Légpárnás boríték E/15 Fehér", price: 50, quantity: "100 db", description: "Fehér színű légpárnás boríték Külső méret: 240x275 mm Belső méret: 220x265 mm", image: "image/legparnas-boritek-feher.jpg" },
+    { name: "Légpárnás boríték F/16 Barna", price: 75, quantity: "150 db", description: "Barna színű légpárnás boríték Külső méret: 240x350 mm Belső méret: 220x340 mm", image: "image/legparnas-boritek.jpg" },
+    { name: "Légpárnás boríték F/16 Fehér", price: 75, quantity: "120 db", description: "Fehér színű légpárnás boríték Külső méret: 240x350 mm Belső méret: 220x340 mm", image: "image/legparnas-boritek-feher.jpg" },
+    { name: "Légpárnás boríték G/17 Barna", price: 80, quantity: "180 db", description: "Barna színű légpárnás boríték Külső méret: 250x350 mm Belső méret: 230x340 mm", image: "image/legparnas-boritek.jpg" },
+    { name: "Légpárnás boríték G/17 Fehér", price: 80, quantity: "85 db", description: "Fehér színű légpárnás boríték Külső méret: 250x350 mm Belső méret: 230x340 mm", image: "image/legparnas-boritek-feher.jpg" },
+    { name: "Légpárnás boríték H/18 Barna", price: 90, quantity: "90 db", description: "Barna színű légpárnás boríték Külső méret: 290x370 mm Belső méret: 270x360 mm", image: "image/legparnas-boritek.jpg" },
+    { name: "Légpárnás boríték H/18 Fehér", price: 90, quantity: "100 db", description: "Fehér színű légpárnás boríték Külső méret: 290x370 mm Belső méret: 270x360 mm", image: "image/legparnas-boritek-feher.jpg" },
+    { name: "Tapadószalag felhordó 75 mm széles", price: 5000, quantity: "1 db", description: "Kézi dobozzáró készülék max. 75 mm széles ragasztószalaghoz", image: "image/tapadoszalag-felhordo-75mm.jpg" },
 
     // { name: "", price: , quantity: "db", description: "", image: "image" },
 
