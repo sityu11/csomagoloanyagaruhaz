@@ -12,8 +12,16 @@ const products = [
     { name: "Futártasak FB06 (400x500x50)", price: 52, quantity: "250 db", description: "Futártasak FB06 Mérete: 400x500x50 mm", image: "image/futartasak.jpg" },
     { name: "Okmánytasak A/5", price: 20, quantity: "700 db", description: "Okmánytasak A/5", image: "image/okmanytasak.jpg" },
     { name: "Okmánytasak A/6", price: 15, quantity: "500 db", description: "Okmánytasak A/6", image: "image/okmanytasak.jpg" },
+    { name: "Légpárnás boríték B/12 Barna", price: 35, quantity: "170 db", description: "Barna színű légpárnás boríték Külső méret: 140x225 mm Belső méret: 120x215 mm", image: "image/legparnas-boritek.jpg" },
+    { name: "Légpárnás boríték B/12 Fehér", price: 35, quantity: "360 db", description: "Fehér színű légpárnás boríték Külső méret: 140x225 mm Belső méret: 120x215 mm", image: "image/legparnas-boritek-feher.jpg" },
+    { name: "Légpárnás boríték C/13 Barna", price: 40, quantity: "200 db", description: "Barna színű légpárnás boríték Külső méret: 170x225 mm Belső méret: 150x215 mm", image: "image/legparnas-boritek.jpg" },
+    { name: "Légpárnás boríték C/13 Fehér", price: 40, quantity: "30 db", description: "Fehér színű légpárnás boríték Külső méret: 170x225 mm Belső méret: 150x215 mm", image: "image/legparnas-boritek-feher.jpg" },
+    { name: "Légpárnás boríték D/14 Barna", price: 45, quantity: "100 db", description: "Barna színű légpárnás boríték Külső méret: 200x275 mm Belső méret: 180x265 mm", image: "image/legparnas-boritek.jpg" },
+    { name: "Légpárnás boríték D/14 Fehér", price: 45, quantity: "130 db", description: "Fehér színű légpárnás boríték Külső méret: 170x225 mm Belső méret: 150x215 mm", image: "image/legparnas-boritek-feher.jpg" },
 
-    { name: "Rock munkavédelmi bakancs több méretben", price: 7000, quantity: "7 db", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO200345:2011, S1P SRC", image: "image/rock.bakancs.jpg" },
+    // { name: "", price: , quantity: "db", description: "", image: "image" },
+
+    { name: "Rock munkavédelmi bakancs több méretben", price: 7000, quantity: "7 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO200345:2011, S1P SRC", image: "image/rock.bakancs.jpg" },
   ];
   
   function displayProducts(productsToShow) {
