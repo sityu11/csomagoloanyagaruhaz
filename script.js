@@ -119,5 +119,25 @@ const products = [
       window.location.reload();
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    var scrollToTopButton = document.getElementById("scroll-to-top");
+
+    // Show/hide the button based on scroll position
+    window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopButton.classList.add("show");
+        } else {
+            scrollToTopButton.classList.remove("show");
+        }
+    };
+
+    // Scroll to top when the button is clicked
+    scrollToTopButton.addEventListener("click", function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+});
+
+
   
   displayProducts(products); // Termékek megjelenítése az oldal betöltésekor
