@@ -110,7 +110,7 @@ h1 {
 .information {
     display: flex;
     flex-direction: column;
-    max-width: 85%;
+    max-width: 75%;
     margin: 10px auto 20px auto;
     padding: 5px;
     padding-bottom: 0px;
@@ -290,7 +290,7 @@ li:hover {
 @media screen and (max-width: 460px) {
 
     input {
-        width: 220px;
+        width: 210px;
     }
     .product-card {
         width: 90%;
