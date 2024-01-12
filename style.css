@@ -120,8 +120,33 @@ h1 {
     color: rgba(64, 64, 64, 0.8);
 }
 
+.information-text {
+    max-width: 100%;
+}
+
 .information-contacts {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
     margin: 0 auto;
+}
+
+.arrow-right {
+    width: 30px;
+    margin: 8px 5px 3px auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-left {
+    width: 30px;
+    margin: 8px auto 3px 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
 .search {
@@ -141,13 +166,14 @@ input {
 }
 
 button {
-    min-height: 29px;
+    width: 30px;
+    height: 30px;
     margin-left: 3px;
     padding: 3px;
     border-radius: 4px;
-    border: 2px solid rgba(97, 161, 243, 0.5);
+    border: 1px solid rgba(84, 166, 243, 0.4);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    background-color: rgba(4, 94, 228, 0.671);
+    background-color: rgba(23, 130, 231, 0.5);
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     transition: all linear;
@@ -210,7 +236,7 @@ button:active {
     border-radius: 2px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     color: rgba(255, 255, 255, 0.9);
-    background: rgba(23, 130, 231, 0.6);
+    background: rgba(23, 130, 231, 0.5);
 }
 
 .product-desc {
@@ -235,7 +261,7 @@ button:active {
     background: rgba(255, 255, 255, 0.8);
     position: fixed;
     bottom: 30px;
-    right: 10px;
+    right: 20px;
     cursor: pointer;
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -257,7 +283,7 @@ button:active {
 }
 
 ul {
-    max-width: 700px;
+    max-width: 720px;
     margin: 8px auto 3px auto;
     padding: 5px;
     border: 2px solid rgba(230, 228, 228, 0.5);
@@ -303,6 +329,9 @@ li:hover {
         max-width: 95%;
         font-size: 12px;
         line-height: 20px;
+    }
+    .arrow {
+        display: none;
     }
      li {
         font-size: 13px;
