@@ -108,7 +108,7 @@ h1 {
 }
 
 h2 {
-    width: 100%;
+    width: 95%;
     min-height: 58px;
     margin: 6px auto 2px auto;
     line-height: 26px;
@@ -204,7 +204,7 @@ button:active {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
     place-items: center;
     width: 300px;
-    height: 440px;
+    height: 480px;
     margin: 10px;
     border: 1px solid #ccc;
     padding: 10px;
@@ -215,7 +215,7 @@ button:active {
     position: absolute;
     content: '';
     width: 299px;
-    height: 439px;
+    height: 479px;
     border-radius: 10px;
     background: rgba(168, 9, 9, 0.5);
     z-index: -1;
@@ -224,7 +224,7 @@ button:active {
 
 .product-card:hover::before {
     width: 310px;
-    height: 450px;
+    height: 490px;
     border-radius: 14px;
 }
   
@@ -243,7 +243,7 @@ button:active {
 }
 
 .product-name {
-    min-height: 80px;
+    min-height: 75px;
     margin: 3px auto;
     padding: 3px;
     font-family: 'Nunito', sans-serif;
@@ -253,7 +253,7 @@ button:active {
 
 .product-card h3 {
     width: 90%;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -265,6 +265,7 @@ button:active {
 }
 
 .product-desc {
+    width: 95%;
     margin-bottom: 5px;
     padding: 4px;
     height: 75px;
