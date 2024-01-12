@@ -38,7 +38,10 @@ const products = [
     { name: "PE (polietilén) tasak 170x250", price: 9, quantity: "300 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 170x250 mm", image: "image/polietilen-tasak.jpg" },
     { name: "PE (polietilén) tasak 200x300", price: 10, quantity: "200 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 200x300 mm", image: "image/polietilen-tasak.jpg" },
     { name: "PE (polietilén) tasak 220x350", price: 11, quantity: "300 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 220x350 mm", image: "image/polietilen-tasak.jpg" },
-    { name: "PE (polietilén) tasak 250x350", price: 12, quantity: "600 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 250x350 mm", image: "image/polietilen-tasak.jpg" },
+    { name: "PE (polietilén) tasak 250x350", price: 11, quantity: "600 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 250x350 mm", image: "image/polietilen-tasak.jpg" },
+    { name: "PE (polietilén) tasak 300x300", price: 12, quantity: "300 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 300x300 mm", image: "image/polietilen-tasak.jpg" },
+    { name: "PE (polietilén) tasak 300x350", price: 12, quantity: "300 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 300x350 mm", image: "image/polietilen-tasak.jpg" },
+    { name: "PE (polietilén) tasak 300x370", price: 13, quantity: "700 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 300x370 mm", image: "image/polietilen-tasak.jpg" },
 
     { name: "Fémpánthüvely 12 mm", price: 6, quantity: "300 db", description: "Fémpánthüvely 12 mm széles. PP, műanyag pántolószalaghoz", image: "image/fempanthuvely.jpg" },
     { name: "Fémpánthüvely 16 mm", price: 8, quantity: "100 db", description: "Fémpánthüvely 16 mm széles. PP, műanyag pántolószalaghoz", image: "image/fempanthuvely.jpg" },
@@ -95,9 +98,18 @@ const products = [
       productImg.style.width = '200px';
       productImg.style.height = '200px';
   
-      const productName = document.createElement('div');
-      productName.classList.add('product-name');
+      // const productName = document.createElement('div');
+      // productName.classList.add('product-name');
+      // productName.textContent = product.name;
+
+      const productNameContainer = document.createElement('div');
+      productNameContainer.classList.add('product-name');
+
+      const productName = document.createElement('h2');
       productName.textContent = product.name;
+
+      productNameContainer.appendChild(productName);
+
   
       const productPrice = document.createElement('h3');
       productPrice.textContent = `Ár: ${product.price} Ft`;
@@ -111,7 +123,7 @@ const products = [
       productQuantity.textContent = product.quantity;
   
       productCard.appendChild(productImg);
-      productCard.appendChild(productName);
+      productCard.appendChild(productNameContainer);
       productCard.appendChild(productPrice);
       productCard.appendChild(productDesc);
       productCard.appendChild(productQuantity);
