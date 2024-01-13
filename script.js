@@ -42,7 +42,6 @@ const products = [
   { name: "PE (polietilén) tasak 300x300", price: 12, quantity: "300 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 300x300 mm", image: "image/polietilen-tasak.jpg" },
   { name: "PE (polietilén) tasak 300x350", price: 12, quantity: "300 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 300x350 mm", image: "image/polietilen-tasak.jpg" },
   { name: "PE (polietilén) tasak 300x370", price: 13, quantity: "700 db", description: "Széleskörben használható víztiszta nejlon zacskó. Méret: 300x370 mm", image: "image/polietilen-tasak.jpg" },
-
   { name: "Fémpánthüvely 12 mm", price: 6, quantity: "300 db", description: "Fémpánthüvely 12 mm széles. PP, műanyag pántolószalaghoz", image: "image/fempanthuvely.jpg" },
   { name: "Fémpánthüvely 16 mm", price: 8, quantity: "100 db", description: "Fémpánthüvely 16 mm széles. PP, műanyag pántolószalaghoz", image: "image/fempanthuvely.jpg" },
   { name: "Műanyag pántolókapocs 12 mm", price: 10, quantity: "500 db", description: "Műanyag pántolókapocs 12 mm széles műanyag vagy textil pántszalaghoz", image: "image/pantolo-kapocs.jpg" },
@@ -56,6 +55,7 @@ const products = [
   { name: "Légpárnás fólia 0,5m/100m", price: 5500, quantity: "2 db", description: "Légpárnás fólia 50 cm széles, 100 méter hosszú tekercsben", image: "image/legparnas-folia.jpg" },
   { name: "Kenderzsineg 200g", price: 1000, quantity: "12 db", description: "Kötöző madzag 200 g", image: "image/kenderzsineg-200g.jpg" },
   { name: "Kenderzsineg 500g", price: 1700, quantity: "2 db", description: "Kötöző madzag 500 g", image: "image/kenderzsineg-500g.jpg" },
+  { name: "Papír élvédő 35x35x3mm/1m", price: 90, quantity: "70 db", description: "1 méter hosszú papír élvédő, sarokvédő. Méret: 35x35x3 mm ", image: "image/papir-elvedo.jpg" },
   { name: "Talpbetét TPR zselés, női, szabható. Méret: 35-39", price: 800, quantity: "7 pár", description: "TPR zselés talpbetét. Méretre szabható. Méret: 35-39", image: "image/talpbetet.jpg" },
   { name: "Talpbetét TPR zselés, férfi, szabható. Méret: 40-47", price: 800, quantity: "7 pár", description: "TPR zselés talpbetét. Méretre szabható. Méret: 40-47", image: "image/talpbetet.jpg" },
 
@@ -80,7 +80,9 @@ const products = [
   { name: "PVC csizma Szín: Terepmintás Méret: 42", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 42", image: "image/gumicsizma.jpg" },
   { name: "PVC csizma Szín: Terepmintás Méret: 43", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 43", image: "image/gumicsizma.jpg" },
   { name: "PVC csizma Szín: Terepmintás Méret: 45", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 45", image: "image/gumicsizma.jpg" },
+  { name: "Füldugó párban", price: 40, quantity: "130 pár", description: "Narancssárga zajvédelmi füldugó párban", image: "image/fuldugo.jpg" },
   { name: "Érintésmentes infravörös lázmérő Berrcom JXB-178", price: 13000, quantity: "2 db", description: "Érintésmentes, infravörös lázmérő 3 különböző üzemmóddal", image: "image/lazmero.jpg" },
+
 
 ];
 
@@ -138,7 +140,7 @@ const products = [
     const searchInput = document.getElementById('searchInput');
     const searchTerm = searchInput.value.toLowerCase();
   
-    const filteredProducts = filter(product =>
+    const filteredProducts = products.filter(product =>
       product.name.toLowerCase().includes(searchTerm)
     );
   
