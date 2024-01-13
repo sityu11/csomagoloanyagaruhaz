@@ -79,7 +79,15 @@ const products = [
   { name: "PVC csizma Szín: Terepmintás Méret: 41", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 41", image: "image/gumicsizma.jpg" },
   { name: "PVC csizma Szín: Terepmintás Méret: 42", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 42", image: "image/gumicsizma.jpg" },
   { name: "PVC csizma Szín: Terepmintás Méret: 43", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 43", image: "image/gumicsizma.jpg" },
-  { name: "PVC csizma Szín: Terepmintás Méret: 45", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 45", image: "image/gumicsizma.jpg" },
+  { name: "PVC csizma Szín: Terepmintás Méret: 45", price: 5000, quantity: "1 pár", description: "Terepmintás gumicsizma PVC+Nitril felsőrésszel Méret: 45", image: "image/gumicsizma.jpg" },  
+  { name: "Baseball sapka, kék", price: 700, quantity: "2 db", description: "Kék színű baseball sapka", image: "image/baseball-sapka-kek.jpg" },
+  { name: "Kötött téli sapka, fekete", price: 500, quantity: "5 db", description: "Fekete színű, kötött téli sapka", image: "image/kotott-teli-sapka.jpg" },
+  { name: "Kötött téli sapka, kék", price: 500, quantity: "5 db", description: "Kék színű, kötött téli sapka", image: "image/kotott-teli-sapka.jpg" },
+  { name: "Kötött téli sapka, narancs", price: 500, quantity: "5 db", description: "Narancs színű, kötött téli sapka", image: "image/kotott-teli-sapka.jpg" },
+  { name: "Kötött téli sapka, szürke", price: 500, quantity: "5 db", description: "Szürke színű, kötött téli sapka", image: "image/kotott-teli-sapka.jpg" },
+  { name: "PP munkavédelmi sisak, kék", price: 1800, quantity: "2 db", description: "Kék színű PP munkavédelmi fejvédő 6 pontos rögzítővel, homlokpánttal. Felszerelhető fültokkal.", image: "image/munkavedelmi-sisak-kek.jpg" },
+  { name: "PP munkavédelmi sisak, piros", price: 1800, quantity: "2 db", description: "Piros színű PP munkavédelmi fejvédő 6 pontos rögzítővel, homlokpánttal. Felszerelhető fültokkal.", image: "image/munkavedelmi-sisak-piros.jpg" },
+
   { name: "Füldugó párban", price: 40, quantity: "130 pár", description: "Narancssárga zajvédelmi füldugó párban", image: "image/fuldugo.jpg" },
   { name: "Érintésmentes infravörös lázmérő Berrcom JXB-178", price: 13000, quantity: "2 db", description: "Érintésmentes, infravörös lázmérő 3 különböző üzemmóddal", image: "image/lazmero.jpg" },
 

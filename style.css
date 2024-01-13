@@ -37,6 +37,16 @@ hr {
     vertical-align: baseline;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem;
+}
+
 ul, ol {
     list-style: none;
 }
@@ -236,7 +246,7 @@ button:active {
     height: 478px;
     border-radius: 10px;
     background: rgba(23, 130, 231);
-    z-index: -1;
+    z-index: -1;    
     opacity: 0;
     transition: 0.3s ease-in-out;
 }
@@ -249,7 +259,6 @@ button:active {
 }
   
 .product-card img {
-    max-width: 100%;
     width: 200px;
     height: 200px;
     border-radius: 5px;
