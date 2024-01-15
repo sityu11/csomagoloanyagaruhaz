@@ -1,3 +1,4 @@
+/*-----CSS Reset -----*/
 * {
     margin: 0;
     padding: 0;
@@ -66,7 +67,7 @@ textarea::placeholder {
     opacity: 1;
 }
 
-/* ----End CSS reset---- */
+/* ----Main CSS---- */
 
 body {
     background: url('image/white-background.png') repeat center center fixed;
@@ -97,8 +98,7 @@ main {
 
 .heading-wrapper {
     max-width: 85%;
-    margin: 5px auto;
-    margin-bottom: 8px;
+    margin: 5px auto 8px auto;
     background: rgba(23, 130, 231, 0.5);
 }
 
@@ -131,7 +131,7 @@ h3 {
     font-size: 20px;
     font-weight: 500;
     border: 2px solid rgba(97, 161, 243, 0.5);
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     color: rgba(255, 255, 255, 0.9);
     background: rgba(23, 130, 231, 0.5);
@@ -178,31 +178,42 @@ h3 {
 }
   
 .search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    width: 300px;
+    height: 40px;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0px auto 10px auto;
+    border: 2px solid rgba(235, 230, 230, 0.8);
+    border-radius: 20px;
 }
 
 input {
-    width: 240px;
-    height: 35px;
-    padding: 3px;
+    flex: 1;
+    height: 30px;
+    margin-left: 15px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
     font-size: 13px;
     font-weight: 600;
-    border: 2px solid rgba(235, 230, 230, 0.8);
-    border-radius: 4px;
     color: rgba(64, 64, 64, 0.9);
 }
 
 button {
     width: 30px;
     height: 30px;
-    margin-left: 3px;
-    padding: 3px;
-    border-radius: 4px;
-    border: 1px solid rgba(84, 166, 243, 0.4);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    background-color: rgba(23, 130, 231, 0.5);
-    color: rgba(255, 255, 255, 0.8);
+    margin-left: 5px;
+    margin-right: 6px;
+    border: none;
+    border-radius: 50%;
+    /* border: 1px solid rgba(84, 166, 243, 0.4); */
+    /* background-color: rgba(23, 130, 231, 0.5); */
+    background: #fff;
+    /* color: rgba(255, 255, 255, 0.8); */
+    color: rgba(23, 130, 231, 0.5);
     cursor: pointer;
     transition: all linear;
 }
@@ -261,7 +272,7 @@ button:active {
 .product-card img {
     width: 200px;
     height: 200px;
-    border-radius: 5px;
+    border-radius: 4px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
     object-fit: contain;
     transition: 0.3s ease-in-out;
