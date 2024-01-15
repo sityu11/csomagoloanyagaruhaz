@@ -94,7 +94,7 @@ const productsList = [
 
 ];
 
-//-----Product card creation-----//
+//-----Product card creation
 
   function displayProducts(productsToShow) {
     const productGrid = document.querySelector('.product-grid');
@@ -140,7 +140,7 @@ const productsList = [
     });
   }
 
-  //-----Meta tag creation-----//
+  //-----Meta tag generation
 
   function generateMetaTags() {
     productsList.forEach(function (product) {
@@ -161,9 +161,8 @@ const productsList = [
     });
   }
 
-  generateMetaTags();
+  //-----Search bar
 
-  
   function searchProduct() {
     const searchInput = document.getElementById('searchInput');
     const searchTerm = searchInput.value.toLowerCase();
@@ -181,11 +180,15 @@ const productsList = [
     displayProducts(filteredProducts);
   }
 
+  //-----Reload homepage
+
   const logo = document.getElementById('logo');
 
   logo.addEventListener('click', function() {
       window.location.reload();
   });
+
+  //-----Scroll to top
 
   document.addEventListener("DOMContentLoaded", function () {
     var scrollToTopButton = document.getElementById("scroll-to-top");
@@ -204,8 +207,8 @@ const productsList = [
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     });
-});
-
-
+  });
   
   displayProducts(productsList); // Termékek megjelenítése az oldal betöltésekor
+
+  generateMetaTags(); // Meta tag generation
