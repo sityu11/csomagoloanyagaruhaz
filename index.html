@@ -64,16 +64,20 @@
             </header>
 
             <main>
-    
-                <form onsubmit="searchProduct(); return false;" class="search">
-                    <input type="text" id="searchInput" placeholder="Keresés...">
-                    <button onclick="searchProduct()"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
-                </form>                
 
-                <div class="product-grid">
-                   <!-- Termék kártyák jönnek ide -->
-                </div>
-                <p id="noProductFound" style="display: none;">Nincs ilyen termék !</p>
+                <section class="search-wrapper">
+                    <form onsubmit="searchProduct(); return false;" class="search">
+                        <input type="text" id="searchInput" placeholder="Keresés...">
+                        <button onclick="searchProduct()"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                    </form>
+                    <p id="noProductFound" style="display: none;">Nincs ilyen termék !</p>
+                </section>
+
+                <section class="product-card-holder">
+                    <div class="product-grid">
+                        <!-- Termék kártyák jönnek ide -->
+                    </div>
+                </section>
                 
             </main>
 

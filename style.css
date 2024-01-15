@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
 }
 
 html {
@@ -71,7 +70,7 @@ textarea::placeholder {
 
 body {
     background: url('image/white-background.png') repeat center center fixed;
-    min-height: 100vh;
+    min-height: 120vh;
     font-family: 'Montserrat', sans-serif;
 }
   
@@ -84,6 +83,7 @@ header {
 }
   
 main {
+    width: 100%;
     padding: 10px;
 }
 
@@ -154,6 +154,8 @@ h3 {
     max-width: 100%;
 }
 
+/*-----Contacts-----*/
+
 .information-contacts {
     max-width: 100%;
     display: flex;
@@ -176,7 +178,36 @@ h3 {
 .arrow-left {
     margin: 8px auto 3px 5px;
 }
-  
+
+ul {
+    max-width: 730px;
+    margin: 8px auto 3px auto;
+    padding: 3px 5px 3px 5px;
+    border: 2px solid rgba(230, 228, 228, 0.5);
+    box-shadow: 3px 3px 5px rgba(196, 195, 195, 0.5);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.3s ease-in-out;
+}
+
+li {
+    display: inline-block;
+    margin: 3px;
+    padding: 5px 5px 3px 5px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(58, 58, 59, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.05);
+    background: rgba(70, 154, 233, 0.2);
+}
+
+/*-----Search bar-----*/
+
 .search {
     display: flex;
     align-items: center;
@@ -209,10 +240,7 @@ button {
     margin-right: 6px;
     border: none;
     border-radius: 50%;
-    /* border: 1px solid rgba(84, 166, 243, 0.4); */
-    /* background-color: rgba(23, 130, 231, 0.5); */
     background: #fff;
-    /* color: rgba(255, 255, 255, 0.8); */
     color: rgba(23, 130, 231, 0.5);
     cursor: pointer;
     transition: all linear;
@@ -221,7 +249,9 @@ button {
 button:active {
     transform: scale(0.9);
 }
-  
+
+/*-----Product cards-----*/
+
 .product-grid {
     margin: 3px auto;
     display: flex;
@@ -307,6 +337,8 @@ button:active {
     font-weight: 600;
 }
 
+/*-----Scrollbar-----*/
+
 #scroll-to-top {
     display: grid;
     position: fixed;
@@ -331,68 +363,50 @@ button:active {
     opacity: 1;
 }
 
-ul {
-    max-width: 730px;
-    margin: 8px auto 3px auto;
-    padding: 3px 5px 3px 5px;
-    border: 2px solid rgba(230, 228, 228, 0.5);
-    box-shadow: 3px 3px 5px rgba(196, 195, 195, 0.5);
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.4);
-    transition: 0.3s ease-in-out;
-}
-
-li {
-    display: inline-block;
-    margin: 3px;
-    padding: 5px 5px 3px 5px;
-    border-radius: 4px;
-    font-size: 16px;
-    text-decoration: none;
-    color: rgba(58, 58, 59, 0.8);
-    transition: 0.3s ease-in-out;
-}
-
-li:hover {
-    transform: scale(1.05);
-    background: rgba(70, 154, 233, 0.2);
-}
+/*-----Tablet version-----*/
 
 @media screen and (max-width: 768px) {
     .product-card {
         min-width: 300px;
         min-height: 440px;
     }
+
     h1 {
         font-size: 22px;
     }
 }
-  
+
+/*-----Mobile version------*/
+
 @media screen and (max-width: 460px) {
     .product-card {
         min-width: 300px;
         min-height: 440px
     }
 
-    input {
-        width: 210px;
+    .search {
+        width: 250px;
     }
      
     h1 {
         font-size: 15px;
     }
+
     h2 {
         line-height: 22px;
     }
+
     .information {
         padding: 0px;
         max-width: 95%;
         font-size: 12px;
         line-height: 20px;
     }
+
     .arrow {
         display: none;
     }
+
      li {
         font-size: 13px;
      }

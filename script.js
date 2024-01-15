@@ -1,4 +1,4 @@
-const products = [
+const productsList = [
   { name: "Kartondoboz E0 (78x78x82)", price: 45, quantity: "150 db", description: "Kartondoboz E0 Mérete: 78x82x82 mm", image: "image/kartondoboz-e0.jpg" },
   { name: "Kartondoboz F0 (140x190x45)", price: 100, quantity: "120 db", description: "Kartondoboz F0 Mérete: 140x190x45 mm", image: "image/kartondoboz-f0.jpg" },
   { name: "Kartondoboz F1 (140x190x60)", price: 120, quantity: "50 db", description: "Kartondoboz F1 Mérete: 140x190x60 mm", image: "image/kartondoboz-f0.jpg" },
@@ -58,9 +58,6 @@ const products = [
   { name: "Papír élvédő 35x35x3mm/1m", price: 90, quantity: "70 db", description: "1 méter hosszú papír élvédő, sarokvédő. Méret: 35x35x3 mm ", image: "image/papir-elvedo.jpg" },
   { name: "Talpbetét TPR zselés, női, szabható. Méret: 35-39", price: 800, quantity: "7 pár", description: "TPR zselés talpbetét. Méretre szabható. Méret: 35-39", image: "image/talpbetet.jpg" },
   { name: "Talpbetét TPR zselés, férfi, szabható. Méret: 40-47", price: 800, quantity: "7 pár", description: "TPR zselés talpbetét. Méretre szabható. Méret: 40-47", image: "image/talpbetet.jpg" },
-
-  // { name: "", price: , quantity: "db", description: "", image: "image" },
-
   { name: "Rock Walker AB munkavédelmi bakancs Méret: 38", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 38", image: "image/rock.bakancs.jpg" },
   { name: "Rock Walker AB munkavédelmi bakancs Méret: 39", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 39", image: "image/rock.bakancs.jpg" },
   { name: "Rock Walker AB munkavédelmi bakancs Méret: 40", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 40", image: "image/rock.bakancs.jpg" },
@@ -87,14 +84,17 @@ const products = [
   { name: "Kötött téli sapka, szürke", price: 500, quantity: "5 db", description: "Szürke színű, kötött téli sapka", image: "image/kotott-teli-sapka.jpg" },
   { name: "PP munkavédelmi sisak, kék", price: 1800, quantity: "2 db", description: "Kék színű PP munkavédelmi fejvédő 6 pontos rögzítővel, homlokpánttal. Felszerelhető fültokkal.", image: "image/munkavedelmi-sisak-kek.jpg" },
   { name: "PP munkavédelmi sisak, piros", price: 1800, quantity: "2 db", description: "Piros színű PP munkavédelmi fejvédő 6 pontos rögzítővel, homlokpánttal. Felszerelhető fültokkal.", image: "image/munkavedelmi-sisak-piros.jpg" },
+  { name: "Láthatósági vállpánt, sárga, férfi", price: 1200, quantity: "5 db", description: "Sárga színű láthatósági vállpánt. Férfi méret.", image: "image/lathatosagi-vallpant.jpg" },
+  { name: "Láthatósági vállpánt, sárga, női", price: 1200, quantity: "5 db", description: "Sárga színű láthatósági vállpánt. Női méret.", image: "image/lathatosagi-vallpant.jpg" },
 
   { name: "Füldugó párban", price: 40, quantity: "130 pár", description: "Narancssárga zajvédelmi füldugó párban", image: "image/fuldugo.jpg" },
   { name: "Érintésmentes infravörös lázmérő Berrcom JXB-178", price: 13000, quantity: "2 db", description: "Érintésmentes, infravörös lázmérő 3 különböző üzemmóddal", image: "image/lazmero.jpg" },
 
+  // { name: "", price: , quantity: "db", description: "", image: "image" },
 
 ];
 
-// import products from "./products";
+//-----Product card creation-----//
 
   function displayProducts(productsToShow) {
     const productGrid = document.querySelector('.product-grid');
@@ -109,10 +109,6 @@ const products = [
       productImg.alt = product.name;
       productImg.style.width = '200px';
       productImg.style.height = '200px';
-  
-      // const productName = document.createElement('div');
-      // productName.classList.add('product-name');
-      // productName.textContent = product.name;
 
       const productNameContainer = document.createElement('div');
       productNameContainer.classList.add('product-name');
@@ -143,12 +139,36 @@ const products = [
       productGrid.appendChild(productCard);
     });
   }
+
+  //-----Meta tag creation-----//
+
+  function generateMetaTags() {
+    productsList.forEach(function (product) {
+        var metaTitle = document.createElement('meta');
+        metaTitle.setAttribute('property', 'og:title');
+        metaTitle.setAttribute('content', product.name);
+        document.head.appendChild(metaTitle);
+
+        var metaDescription = document.createElement('meta');
+        metaDescription.setAttribute('property', 'og:description');
+        metaDescription.setAttribute('content', product.description);
+        document.head.appendChild(metaDescription);
+
+        var metaImage = document.createElement('meta');
+        metaImage.setAttribute('property', 'og:image');
+        metaImage.setAttribute('content', product.image);
+        document.head.appendChild(metaImage);
+    });
+  }
+
+  generateMetaTags();
+
   
   function searchProduct() {
     const searchInput = document.getElementById('searchInput');
     const searchTerm = searchInput.value.toLowerCase();
   
-    const filteredProducts = products.filter(product =>
+    const filteredProducts = productsList.filter(product =>
       product.name.toLowerCase().includes(searchTerm)
     );
   
@@ -188,4 +208,4 @@ const products = [
 
 
   
-  displayProducts(products); // Termékek megjelenítése az oldal betöltésekor
+  displayProducts(productsList); // Termékek megjelenítése az oldal betöltésekor
