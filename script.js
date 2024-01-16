@@ -114,6 +114,8 @@ const productsList = [
       productImg.alt = product.name;
       productImg.style.width = '200px';
       productImg.style.height = '200px';
+      productImg.loading = 'lazy';
+
 
       const productNameContainer = document.createElement('div');
       productNameContainer.classList.add('product-name');
