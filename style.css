@@ -278,6 +278,9 @@ button:active {
 
 .product-card:hover {
     background: rgba(168, 202, 229, 0.8);
+    .product-name, .product-desc {
+        background: rgba(255, 255, 255, 0.5);
+    }
 }
 
 .product-card::before {
@@ -317,23 +320,27 @@ button:active {
     min-height: 75px;
     margin: 3px auto;
     padding: 3px;
+    border-radius: 4px;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 600;
+    transition: 0.3s ease-in-out;
 }
 
 .product-desc {
     width: 100%;
+    height: 70px;
     margin-bottom: 5px;
-    padding: 2px;
-    height: 75px;
+    padding: 4px;
+    border-radius: 4px;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
+    transition: 0.3s ease-in-out;
 }
 
 .product-quantity {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 600;
 }
 
