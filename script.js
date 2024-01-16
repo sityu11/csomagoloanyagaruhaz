@@ -105,7 +105,7 @@ const productsList = [
     const productGrid = document.querySelector('.product-grid');
     productGrid.innerHTML = '';
   
-    productsToShow.forEach(product => {
+    productsToShow.forEach((product, index) => {
       const productCard = document.createElement('div');
       productCard.classList.add('product-card');
   
@@ -114,8 +114,12 @@ const productsList = [
       productImg.alt = product.name;
       productImg.style.width = '200px';
       productImg.style.height = '200px';
-      productImg.loading = 'lazy';
-
+      
+      if (index === 0) {
+        productImg.loading = 'eager';
+      } else {
+        productImg.loading = 'lazy';
+      }
 
       const productNameContainer = document.createElement('div');
       productNameContainer.classList.add('product-name');
