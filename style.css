@@ -394,11 +394,11 @@ button:active {
 @media screen and (max-width: 460px) {
     .product-card {
         min-width: 300px;
-        min-height: 460px
+        min-height: 470px
     }
 
     .product-desc {
-        height: 80px;
+        height: 85px;
     }
 
     .search {
