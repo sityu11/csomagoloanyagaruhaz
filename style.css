@@ -277,10 +277,12 @@ button:active {
 }
 
 .product-card:hover {
-    background: rgba(168, 202, 229, 0.8);
     .product-name, .product-desc {
+        border: 1px solid #ffffffb7;
         background: rgba(255, 255, 255, 0.5);
+        outline: thick #eeeeee8a groove;
     }
+    background: rgba(168, 202, 229, 0.8);
 }
 
 .product-card::before {
