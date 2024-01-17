@@ -70,8 +70,8 @@ textarea::placeholder {
 
 body {
     background: url('image/white-background.png') repeat center center fixed;
-    min-height: 120vh;
-    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
 }
   
 header {
@@ -109,7 +109,7 @@ main {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 22px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
@@ -121,13 +121,14 @@ h2 {
     width: 95%;
     min-height: 58px;
     margin: 6px auto 2px auto;
+    font-family: 'Nunito', sans-serif;
     line-height: 25px;
 }
 
 h3 {
     width: 85%;
     margin-bottom: 5px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     font-weight: 500;
     border: 2px solid rgba(97, 161, 243, 0.5);
@@ -145,7 +146,7 @@ h3 {
     padding: 5px;
     padding-bottom: 0px;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     color: rgba(64, 64, 64, 0.8);
 }
@@ -335,6 +336,7 @@ button:active {
     margin-bottom: 5px;
     padding: 4px;
     border-radius: 4px;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
