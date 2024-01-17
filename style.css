@@ -71,7 +71,7 @@ textarea::placeholder {
 body {
     background: url('image/white-background.png') repeat center center fixed;
     min-height: 100vh;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
   
 header {
@@ -109,7 +109,7 @@ main {
 }
 
 h1 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 22px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
@@ -121,14 +121,14 @@ h2 {
     width: 95%;
     min-height: 58px;
     margin: 6px auto 2px auto;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 25px;
 }
 
 h3 {
     width: 85%;
     margin-bottom: 5px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 500;
     border: 2px solid rgba(97, 161, 243, 0.5);
@@ -324,7 +324,7 @@ button:active {
     margin: 3px auto;
     padding: 3px;
     border-radius: 4px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     font-weight: 600;
     transition: 0.3s ease-in-out;
@@ -336,7 +336,7 @@ button:active {
     margin-bottom: 5px;
     padding: 4px;
     border-radius: 4px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -344,7 +344,7 @@ button:active {
 }
 
 .product-quantity {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
 }
 
@@ -379,7 +379,7 @@ button:active {
 @media screen and (max-width: 768px) {
     .product-card {
         min-width: 300px;
-        min-height: 440px;
+        min-height: 450px;
     }
 
     h1 {
@@ -392,7 +392,11 @@ button:active {
 @media screen and (max-width: 460px) {
     .product-card {
         min-width: 300px;
-        min-height: 440px
+        min-height: 450px
+    }
+
+    .product-desc {
+        height: 75px;
     }
 
     .search {
