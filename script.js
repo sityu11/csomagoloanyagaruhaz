@@ -96,7 +96,6 @@ const productsList = [
   { name: "Láthatósági mellény, sárga. Méret: XL", price: 1000, quantity: "5 db", description: "Jól láthatósági mellény. Alapanyag: 100% poliészter. Szín: fluoreszcens sárga. Méret: XL", image: "image/lathatosagi-melleny-sarga.jpg" },
   { name: "Füldugó párban", price: 40, quantity: "130 pár", description: "Narancssárga zajvédelmi füldugó párban", image: "image/fuldugo.jpg" },
   { name: "Höfftech KWTS 1809 2in1 multifunkciós ágvágó", price: 10000, quantity: "1 db", description: "Akkumulátoros, multifunkciós orrfűrész ágvágó adapterrel. 12V, 1.5Ah, Li-ion akkumulátor", image: "image/hofftech-agvago.jpg" },
-  { name: "Black and Decker BCRTA01 3in1 akkus csavarozó", price: 6500, quantity: "2 db", description: "Black and Decker BCRTA01 3in1 akkus csavarozó. Akku feszültség: 3.6V. Nyomaték: 5.5Nm. Akku kap.: 1.5Ah", image: "image/blackanddecker-bcrta-01.jpg" },
   { name: "Black and Decker CS36BST akkus csavarbehajtó", price: 10000, quantity: "1 db", description: "Black and Decker CS36BST akkus csavarbehajtó LED lámpával", image: "image/blackanddecker-cs36bst.jpg" },
   { name: "Black and Decker KX1692 hőlégfúvó", price: 8000, quantity: "1 db", description: "Black and Decker KX1692 hőlégfúvó. 1600W Két hőfok: 130 és 560 C°. Elforgatható markolat.", image: "image/blackanddecker-kx1692.jpg" },
   { name: "Érintésmentes infravörös lázmérő Berrcom JXB-178", price: 13000, quantity: "2 db", description: "Érintésmentes, infravörös lázmérő 3 különböző üzemmóddal", image: "image/lazmero.jpg" },
