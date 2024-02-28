@@ -1,9 +1,8 @@
 const productsList = [
   { name: "Kartondoboz E0 (78x78x82)", price: 45, quantity: "150 db", description: "Kartondoboz E0 Méret: 78x82x82 mm", image: "image/kartondoboz-e0.jpg" },
   { name: "Kartondoboz F0 (140x190x45)", price: 100, quantity: "120 db", description: "Kartondoboz F0 Méret: 140x190x45 mm", image: "image/kartondoboz-f0.jpg" },
-  { name: "Kartondoboz F1 (140x190x60)", price: 120, quantity: "50 db", description: "Kartondoboz F1 Méret: 140x190x60 mm", image: "image/kartondoboz-f0.jpg" },
   { name: "Kartondoboz G9 (260x400x400)", price: 300, quantity: "150 db", description: "Kartondoboz G9 Méret: 260x400x400 mm", image: "image/doboz.jpg" },
-  { name: "Futártasak FB02 (225x325x50)", price: 25, quantity: "440 db", description: "Futártasak FB02 Méret: 225x325x50 mm", image: "image/futartasak.jpg" },
+  { name: "Futártasak FB02 (225x325x50)", price: 25, quantity: "400 db", description: "Futártasak FB02 Méret: 225x325x50 mm", image: "image/futartasak.jpg" },
   { name: "Futártasak FB03 (240x350x50)", price: 26, quantity: "110 db", description: "Futártasak FB03 Méret: 240x350x50 mm", image: "image/futartasak.jpg" },
   { name: "Futártasak FB04 (325x425x50)", price: 40, quantity: "30 db", description: "Futártasak FB04 Méret: 325x425x50 mm", image: "image/futartasak.jpg" },
   { name: "Futártasak FB05 (350x450x50)", price: 50, quantity: "280 db", description: "Futártasak FB05 Méret: 350x450x50 mm", image: "image/futartasak.jpg" },
@@ -66,7 +65,7 @@ const productsList = [
   { name: "Rock Walker AB munkavédelmi bakancs Méret: 42", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 42", image: "image/rock.bakancs.jpg" },
   { name: "Rock Walker AB munkavédelmi bakancs Méret: 45", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 45", image: "image/rock.bakancs.jpg" },
   { name: "Rock Jazz AB munkavédelmi bakancs Méret: 41", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 41", image: "image/jazz-bakancs.jpg" },
-  { name: "Rock Jazz AB munkavédelmi bakancs Méret: 42", price: 6000, quantity: "2 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 42", image: "image/jazz-bakancs.jpg" },
+  { name: "Rock Jazz AB munkavédelmi bakancs Méret: 42", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 42", image: "image/jazz-bakancs.jpg" },
   { name: "Rock Jazz AB munkavédelmi bakancs Méret: 43", price: 6000, quantity: "2 pár", description: "Rock munkavédelmi bakancs, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 43", image: "image/jazz-bakancs.jpg" },
   { name: "Rock Walker SA munkavédelmi szandál Méret: 41", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi szandál, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 41", image: "image/munkavedelmi-szandal.jpg" },
   { name: "Rock Walker SA munkavédelmi szandál Méret: 42", price: 6000, quantity: "1 pár", description: "Rock munkavédelmi szandál, acélkaplis, taplemezes. Minősítés: CE, EN, ISO20345:2011, S1P SRC Méret: 42", image: "image/munkavedelmi-szandal.jpg" },
@@ -92,7 +91,6 @@ const productsList = [
   { name: "Füldugó párban", price: 40, quantity: "130 pár", description: "Narancssárga zajvédelmi füldugó párban", image: "image/fuldugo.jpg" },
   { name: "Höfftech KWTS 1809 2in1 multifunkciós ágvágó", price: 10000, quantity: "1 db", description: "Akkumulátoros, multifunkciós orrfűrész ágvágó adapterrel. 12V, 1.5Ah, Li-ion akkumulátor", image: "image/hofftech-agvago.jpg" },
   { name: "Black and Decker CS36BST akkus csavarbehajtó", price: 10000, quantity: "1 db", description: "Black and Decker CS36BST akkus csavarbehajtó LED lámpával", image: "image/blackanddecker-cs36bst.jpg" },
-  { name: "Black and Decker KX1692 hőlégfúvó", price: 8000, quantity: "1 db", description: "Black and Decker KX1692 hőlégfúvó. 1600W Két hőfok: 130 és 560 C°. Elforgatható markolat.", image: "image/blackanddecker-kx1692.jpg" },
   { name: "Érintésmentes infravörös lázmérő Berrcom JXB-178", price: 13000, quantity: "2 db", description: "Érintésmentes, infravörös lázmérő 3 különböző üzemmóddal", image: "image/lazmero.jpg" },
   { name: "Takaróponyva 5x7 méter", price: 5000, quantity: "4 db", description: "Takaróponyva 65g/m2. Méret: 5x7 méter", image: "image/takaroponyva.jpg" },
 
