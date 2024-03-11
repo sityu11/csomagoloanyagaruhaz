@@ -45,7 +45,7 @@ const productsList = [
   { name: "Vákuum tasak Pet/Pe 200x280mm", price: 22, quantity: "2390 db", description: "Pet/Pe vákuumtasak, 200 mm széles, 280 mm hosszú.", image: "image/vakuum-tasak.jpg" },
   { name: "Fémpánthüvely 12 mm", price: 6, quantity: "300 db", description: "Fémpánthüvely 12 mm széles. PP, műanyag pántolószalaghoz", image: "image/fempanthuvely.jpg" },
   { name: "Fémpánthüvely 16 mm", price: 8, quantity: "100 db", description: "Fémpánthüvely 16 mm széles. PP, műanyag pántolószalaghoz", image: "image/fempanthuvely.jpg" },
-  { name: "Műanyag pántolókapocs 12 mm", price: 10, quantity: "500 db", description: "Műanyag pántolókapocs 12 mm széles műanyag vagy textil pántszalaghoz", image: "image/pantolo-kapocs.jpg" },
+  { name: "Műanyag pántolókapocs 12 mm", price: 10, quantity: "150 db", description: "Műanyag pántolókapocs 12 mm széles műanyag vagy textil pántszalaghoz", image: "image/pantolo-kapocs.jpg" },
   { name: "Műanyag pántolókapocs 16 mm", price: 12, quantity: "500 db", description: "Műanyag pántolókapocs 16 mm széles műanyag vagy textil pántszalaghoz", image: "image/pantolo-kapocs.jpg" },
   { name: "Pántolócsat (foszfátos) textil pántszalaghoz M13", price: 20, quantity: "600 db", description: "Foszfátos pántolókapocs 13 mm széles textil pántszalaghoz", image: "image/pantolocsat.jpg" },
   { name: "Pántolócsat (foszfátos) textil pántszalaghoz M16", price: 25, quantity: "300 db", description: "Foszfátos pántolókapocs 16 mm széles textil pántszalaghoz", image: "image/pantolocsat.jpg" },
